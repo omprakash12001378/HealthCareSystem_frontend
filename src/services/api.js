@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://13.62.27.170';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://omprakashreddysaggam.cloud-ip.cc';
 
 // Create axios instance with default config
 const apiClient = axios.create({
