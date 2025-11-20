@@ -25,18 +25,7 @@ const NotificationBell = () => {
       // Fetch initial notifications and count
       dispatch(fetchNotifications(user.userId));
       dispatch(fetchUnreadCount(user.userId));
-
-      // Connect to WebSocket
-      webSocketService.connect(user.userId, (notification) => {
-        // Add new notification to state
-        dispatch(addNotification(notification));
-        dispatch(fetchUnreadCount(user.userId));
-      });
     }
-
-    return () => {
-      webSocketService.disconnect();
-    };
   }, [user?.userId, dispatch]);
 
   // Close dropdown when clicking outside
