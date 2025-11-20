@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://gateway-service-production-57d7.up.railway.app';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://localhost:8080';
 
 // Create axios instance with default config
 const apiClient = axios.create({
